@@ -46,6 +46,10 @@ export class RainGaugeCardEditor extends ScopedRegistryHost(LitElement) implemen
     return this._config?.name || '';
   }
 
+  get _size(): string {
+    return this._config?.size || '';
+  }
+
   get _entity(): string {
     return this._config?.entity || '';
   }
